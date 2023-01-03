@@ -22,7 +22,7 @@ We use this package to make measurements at the same time within the minute for 
     use warnings;
     use DateTime;
     use Time::HiRes::Sleep::Until;
-    my $su=Time::HiRes::Sleep::Until->new;
+    my $su = Time::HiRes::Sleep::Until->new;
     do {
       print DateTime->now, "\n"; #make a measurment three times a minute
     } while ($su->mark(20));
@@ -36,7 +36,7 @@ Perl One liner
 ## new
 
     use Time::HiRes::Sleep::Until;
-    my $su=Time::HiRes::Sleep::Until->new;
+    my $su = Time::HiRes::Sleep::Until->new;
 
 # METHODS
 
@@ -54,22 +54,22 @@ Sleep until provided epoch in float seconds.
 
 Sleep until next second mark;
 
-    my $slept=$su->mark(20); # 20 second mark, i.e.  3 times a minute on the 20s
-    my $slept=$su->mark(10); # 10 second mark, i.e.  6 times a minute on the 10s
-    my $slept=$su->mark(6);  #  6 second mark, i.e. 10 times a minute on 0,6,12,...
+    my $slept = $su->mark(20); # 20 second mark, i.e.  3 times a minute on the 20s
+    my $slept = $su->mark(10); # 10 second mark, i.e.  6 times a minute on the 10s
+    my $slept = $su->mark(6);  #  6 second mark, i.e. 10 times a minute on 0,6,12,...
 
 ## second
 
 Sleep until the provided seconds after the minute
 
-    my $slept=$su->second(0);  #sleep until top of minute
-    my $slept=$su->second(30); #sleep until bottom of minute
+    my $slept = $su->second(0);  #sleep until top of minute
+    my $slept = $su->second(30); #sleep until bottom of minute
 
 ## top
 
 Sleep until the top of the minute
 
-    my $slept=$su->top; #alias for $su->second(0);
+    my $slept = $su->top; #alias for $su->second(0);
 
 ## time
 
@@ -85,27 +85,17 @@ The mathematics add a small amount of delay for which we do not account.  Testin
 
 # BUGS
 
-Please log on RT and send an email to the author.
-
-# SUPPORT
-
-DavisNetworks.com supports all Perl applications including this package.
+Please log on GitHub
 
 # AUTHOR
 
     Michael R. Davis
-    CPAN ID: MRDVT
-    Satellite Tracking of People, LLC
-    mdavis@stopllc.com
-    http://www.stopllc.com/
 
 # COPYRIGHT
 
-This program is free software licensed under the...
+MIT License
 
-The General Public License (GPL), Version 2, June 1991
-
-The full text of the license can be found in the LICENSE file included with this module.
+Copyright (c) 2023 Michael R. Davis
 
 # SEE ALSO
 
