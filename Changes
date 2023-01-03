@@ -1,0 +1,35 @@
+Revision history for Perl module Time::HiRes::Sleep::Until
+
+0.09 2023-01-02
+  - Updated LICENSE to MIT from GPL v2
+  - Added GitHub repository
+  - Removed nhimult import
+  - Dropped Todo file
+
+0.08 2020-04-30
+  - Updated lib/Time/HiRes/Sleep/Until.pm
+    - Added time and sleep wrappers
+    - Updated documentation
+
+0.07 2014-10-20
+  - Updated tests to hopefully get a better pass rate from CPAN testers
+
+0.06 2014-10-09
+  - Updated tests - added SKIP block for unreliable sleeping testers - Thanks to G. Wade Johnson - houston-pm
+
+0.05 2014-08-29
+  - Relaxed tests for CPAN testers
+
+0.04 2014-08-24
+  - Documentation
+
+0.03 2014-08-08
+  - Added top method alias
+  - Added example script Time-HiRes-Sleep-Until-epoch.pl
+
+0.02 2014-05-13
+  - Tweaked epoch method to reduce latency
+  - Updated documentation
+
+0.01 2014-05-12
+  - original version; created by ExtUtils::ModuleMaker 0.51
