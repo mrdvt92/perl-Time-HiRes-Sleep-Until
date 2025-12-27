@@ -24,6 +24,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: Install make on Windows
+      if: runner.os == 'Windows'
+      shell: powershell
+      run: choco install -y make
+
     - name: Set up perl
       uses: shogo82148/actions-setup-perl@v1
       with:
